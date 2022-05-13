@@ -7,3 +7,9 @@
 .logo{
     max-width: 63px;
 }
+
+.nav-menu ul{
+    display: flex;
+    gap: 2.2vw;
+    list-style-type: none;
+}
