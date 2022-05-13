@@ -1,0 +1,9 @@
+.header{
+    display: flex;
+}
+.logo-container{
+    flex-grow: 1;
+}
+.logo{
+    max-width: 63px;
+}
