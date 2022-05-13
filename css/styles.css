@@ -44,7 +44,13 @@ body{
     border: 0;
 }
 
-
+main{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    min-height: calc(100vmax/2);
+}
 .landing-image-container{
     position: absolute;
     top:0;
@@ -57,7 +63,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    min-height: 80vh;
+    /* min-height: 80vh; */
 }
 
 .landing-image-container .overlay{
