@@ -1,8 +1,10 @@
 body{
     font-family: 'Roboto', sans-serif;
+    
 }
 .header{
     display: flex;
+    padding: 20px 100px;
 }
 .logo-container{
     flex-grow: 1;
@@ -11,8 +13,26 @@ body{
     max-width: 63px;
 }
 
+
 .nav-menu ul{
     display: flex;
+    justify-content: baseline;
     gap: 2.2vw;
     list-style-type: none;
+    align-items: baseline;
+}
+.nav-menu ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    
+}
+.nav-menu ul button{
+    color: white;
+    background-color: #0d0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: .9rem;
+    font-weight: bolder;
+    border: 0;
 }
