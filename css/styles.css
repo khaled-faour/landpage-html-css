@@ -197,8 +197,22 @@ main{
     object-fit: cover;
 }
 
+.media-section{
+    background-color: #eee;
+}
 
+.media-section .media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+.media-section .media .images{
+    display: flex;
+    width: 100%;
+    
+}
 
 
 @media only screen and (max-width: 768px){
@@ -258,6 +272,9 @@ main{
         flex-direction: column;
     }
     .programs .cards{
+        flex-direction: column;
+    }
+    .media-section .media .images{
         flex-direction: column;
     }
 }
