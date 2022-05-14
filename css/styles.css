@@ -43,8 +43,6 @@ body{
     background-color: #0d0;
     border-radius: 5px;
     padding: 10px 20px;
-    font-size: .9rem;
-    font-weight: bolder;
     border: 0;
 }
 .nav-menu ul .apply-button .button-arrow{
@@ -52,35 +50,71 @@ body{
 }
 
 main{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.section{
+    position: relative;
     top:0;
     left: 0;
     right: 0;
-    height: calc(100vmax/2);
+    height: 80vmax;
 }
-.landing-image-container{
+.landing-image-container, .landing-image-container .overlay{
     position: absolute;
     top:0;
     right: 0;
     left: 0;
-    bottom:0
-    
+    bottom:0;
 }
+
 .landing-image-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* min-height: 80vh; */
 }
 
 .landing-image-container .overlay{
     background-color: black;
     opacity: 0.5;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  
+}
+
+.content-wrapper{
+    position: relative;
+    top: 130px;
+    bottom: 0px;
+}
+.landing-content{
+    position: relative;
+    padding-top: calc(80vmax/5);
+    width: calc(30vw + 2rem);
+    color: white;
+    left: calc(5vw + 1rem);
+    word-wrap: normal;
+}
+.landing-content h1{
+    font-weight: normal;
+    font-size: calc(2.5vw + 1rem);
+}
+.landing-content p{
+    font-weight: normal;
+    font-size: calc(0.6vw + 1rem);
+    text-align: left;
+}
+
+.learn-more-button{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: #0d0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: .1s opacity linear;
+}
+.learn-more-button:hover{
+    opacity: 0.8;
+    
 }
 
 .nav-menu-button{
@@ -96,6 +130,7 @@ main{
         background-color: white;
         flex-direction: column;
         align-items: center;
+        align-content: center;
         justify-content: space-around;
         gap: calc(-100px);
         /* position: absolute; */
@@ -119,9 +154,7 @@ main{
     .nav-menu ul .apply-button .button-arrow{
         display: block;
     }
-    main{
-        height: 80vmax;
-    }
+
     .nav-menu-button{
         display: block;
     }
@@ -136,4 +169,11 @@ main{
         color: black;
         display: none;
     }
+    .section{
+        height: 100vmax;
+    }
+    .landing-content{
+        padding-top: calc(50vh/10);
+    }
+    
 }
