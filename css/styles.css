@@ -217,6 +217,16 @@ main{
     object-fit: cover;
 }
 
+.funding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.funding img{
+    width: 100%;
+    object-fit: cover;
+}
+
 
 
 @media only screen and (max-width: 768px){
