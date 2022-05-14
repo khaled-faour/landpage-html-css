@@ -68,7 +68,7 @@ main{
     top:0;
     left: 0;
     right: 0;
-    height: 80vmax;
+    height: calc(80vmax * .7);
 }
 .landing-image-container, .landing-image-container .overlay{
     position: absolute;
@@ -128,7 +128,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80vw;
+    /* width: 80vw; */
     padding-left: calc(10vw + 1rem);
     padding-right: calc(10vw + 1rem);
     
@@ -146,7 +146,6 @@ main{
     flex-direction: column;
     align-items: left;
     
-    /* width: 50%; */
 }
 .summary-numbers{
     color: #18ea19;
@@ -156,6 +155,28 @@ main{
     color: #18ea19;
 }
 
+.programs-section{
+    background-color: #18ea19;
+}
+
+.programs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.programs .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 30px;
+}
+.programs .cards img{
+    width: 100%;
+    height: 100%;
+}
 
 @media only screen and (max-width: 768px){
     .header{
@@ -169,7 +190,6 @@ main{
         align-content: center;
         justify-content: space-around;
         gap: calc(-100px);
-        /* position: absolute; */
         top: 0;
         left: 100vw;
         overflow: hidden;
@@ -214,5 +234,7 @@ main{
     .summary, .information{
         flex-direction: column;
     }
-    
+    .programs .cards{
+        flex-direction: column;
+    }
 }
