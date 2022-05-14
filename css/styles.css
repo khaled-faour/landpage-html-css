@@ -183,6 +183,22 @@ main{
     object-fit: cover;
 }
 
+.recruitments{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.recruitments img{
+    width: 80%;
+    object-fit: cover;
+}
+
+
+
 
 
 @media only screen and (max-width: 768px){
