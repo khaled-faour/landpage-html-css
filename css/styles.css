@@ -124,7 +124,7 @@ main{
     display: none;
 }
 
-.summary, .information{
+.summary, .information, .graduates{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -177,6 +177,13 @@ main{
     width: 100%;
     height: 100%;
 }
+
+.graduates img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
 
 @media only screen and (max-width: 768px){
     .header{
@@ -231,7 +238,7 @@ main{
     .landing-content{
         padding-top: calc(50vh/10);
     }
-    .summary, .information{
+    .summary, .information, .graduates{
         flex-direction: column;
     }
     .programs .cards{
