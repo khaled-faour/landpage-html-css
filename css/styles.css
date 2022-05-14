@@ -246,8 +246,35 @@ main{
 .newsletter a:hover{
     opacity: .7;
 }
+.footer{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 
+}
+.footer .privacy-policy a{
+    color: #18ea19;
+}
+.footer .copyrights{
+    color:white
+}
+.footer .social-media{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+.footer .social-media a{
+    color: white;
+    text-decoration: none;
+    transition: .1s opacity linear;
+    font-size: 20px;
+}
+.footer .social-media a:hover{
+    opacity: .7;
+}
 
 
 
@@ -316,5 +343,10 @@ main{
     }
     .media-section .media .images img, .strategic .images img{
         width: 50%;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
