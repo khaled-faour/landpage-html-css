@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Font Awesome -->
+    <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +19,7 @@
         </div>
         <!-- Navbar Items -->
         <div class="nav-menu">
-            <ul>
+            <ul id="nav-list">
                 <a href="#"><li>Home</li></a>
                 <a href="#"><li>Get Trained</li></a>
                 <a href="#"><li>Hire Talent</li></a>
@@ -25,8 +27,30 @@
                 <a href="#"><li>Blog</li></a>
                 <a href="#"><li>About Us</li></a>
                 <a href="#"><li>Contact</li></a>
-                <button>Apply Now</button></li>
+                <a class="apply-button">
+                    <li>Apply Now</li>
+                    <i class="fas fa-angle-right button-arrow"></i>
+                </a> 
             </ul>
+        </div>
+
+        <!-- Navbar Menu Button (For Small Screens Only)-->
+        <div class="nav-menu-button">
+            <script type="text/javascript">
+                function showNavlsit(){
+                    document.getElementById('nav-list').style.left = 0
+                    document.getElementById('nav-list').style.right = 0
+                    document.getElementById('show-button').style.display = 'none'
+                    document.getElementById('hide-button').style.display = 'block'
+                }
+                function hideNavlsit(){
+                    document.getElementById('nav-list').style.left = '100vw'
+                    document.getElementById('show-button').style.display = 'block'
+                    document.getElementById('hide-button').style.display = 'none'
+                }
+            </script>
+            <button id="show-button" href="#" onclick="showNavlsit()"><i class="fas fa-bars"></i></button>
+            <button id="hide-button" href="#" onclick="hideNavlsit()"><i class="fas fa-times"></i></button>
         </div>
     </header>
 
@@ -46,5 +70,7 @@
             </h1>
         </div>
     </main>
+
+    
 </body>
 </html>
