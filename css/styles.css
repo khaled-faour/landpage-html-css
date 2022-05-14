@@ -207,17 +207,17 @@ main{
     flex-direction: column;
     align-items: center;
 }
-.media-section .media .images{
+.media-section .media .images, .strategic .images{
     display: flex;
     align-items: center;
     width: 100%;
 }
-.media-section .media .images img{
+.media-section .media .images img, .strategic .images img{
     width: 25%;
     object-fit: cover;
 }
 
-.funding{
+.funding, .strategic{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -226,6 +226,8 @@ main{
     width: 100%;
     object-fit: cover;
 }
+
+
 
 
 
@@ -288,11 +290,11 @@ main{
     .programs .cards{
         flex-direction: column;
     }
-    .media-section .media .images{
+    .media-section .media .images, .strategic .images{
+        gap: 20px;
         flex-direction: column;
-
     }
-    .media-section .media .images img{
+    .media-section .media .images img, .strategic .images img{
         width: 50%;
     }
 }
