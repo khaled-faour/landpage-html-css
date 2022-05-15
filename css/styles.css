@@ -2,7 +2,7 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: white;
-
+    overflow-x: hidden;
 }
 
 h1{
@@ -24,9 +24,11 @@ p{
     padding: 20px 100px;
     z-index: 10;
     align-items: center;
+    
 }
 .logo-container{
     flex-grow: 1;
+    z-index: 100;
 }
 .logo{
     max-width: 63px;
@@ -62,46 +64,25 @@ p{
 main{
     display: flex;
     flex-direction: column;
-}
-.section{
-    position: relative;
-    top:0;
-    left: 0;
-    right: 0;
-    height: calc(80vmax * .7);
-}
-.landing-image-container, .landing-image-container .overlay{
-    position: absolute;
-    top:0;
-    right: 0;
-    left: 0;
-    bottom:0;
+    
 }
 
-.landing-image-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.landing-image-container .overlay{
-    background-color: black;
-    opacity: 0.5;
-  
+.landing-section{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/IMG_9780.JPG');
+    background-position:center center;
+    background-size: cover;
+    max-height: 85vax;
 }
-
 .content-wrapper{
-    position: relative;
-    top: 130px;
-    bottom: 0px;
+    padding: 50px;
 }
 .landing-content{
-    position: relative;
-    padding-top: calc(80vmax/5);
-    width: calc(30vw + 2rem);
+    padding-top: 50vmin;
     color: white;
-    left: calc(5vw + 1rem);
     word-wrap: normal;
+    margin-bottom: 7vmax;
+    width: 40vw;
 }
 
 
@@ -128,9 +109,6 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 80vw; */
-    padding-left: calc(10vw + 1rem);
-    padding-right: calc(10vw + 1rem);
     
 }
 .summary-item{
@@ -186,7 +164,7 @@ main{
 .recruitments{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    /* width: 80%; */
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -198,7 +176,7 @@ main{
     object-fit: cover;
 }
 
-.media-section, .newsletter{
+.media-section, .newsletter-section{
     background-color: #eee;
 }   
 
@@ -325,17 +303,17 @@ main{
         color: black;
         display: none;
     }
-    .section{
-        height: 100vmax;
+    
+    .landing-section{
+        min-height: 80vmax;
     }
-    .landing-content{
-        padding-top: calc(50vh/10);
-    }
+    
     .summary, .information, .graduates{
         flex-direction: column;
     }
     .programs .cards{
         flex-direction: column;
+        width: 100%;
     }
     .media-section .media .images, .strategic .images{
         gap: 20px;
